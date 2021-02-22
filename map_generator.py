@@ -87,7 +87,7 @@ def generate_map(nickname:str) -> int:
     if follower_locations == 404:
         return 404
     custom_map = append_marker_layer(custom_map, follower_locations)
-    custom_map.save('templates\\{}custom_map.html'.format(nickname))
+    custom_map.save('templates/{}custom_map.html'.format(nickname))
 
 
 if __name__ == '__main__':
