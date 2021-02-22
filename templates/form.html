@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>
+        Enter here someone's Twitter nickname, and you'll get locations of his followers.
+    </h1>
+    <form action="/submit", method="post">
+        <input autocomplete="off" autofocus name="nickname" placeholder="@nickname" type="text">
+        <input type="submit" value="Trace">
+    </form>
+{% endblock %}
